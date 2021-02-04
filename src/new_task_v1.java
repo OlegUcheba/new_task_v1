@@ -3,57 +3,6 @@ import java.util.*;
 
 public class new_task_v1 {
     public static void main(String arg[]) {
-        Scanner sc  = new Scanner(System.in);
-        System.out.println("Введите номер задачи, которую хотите протестировать");
-        int test_num=sc.nextInt();
-        switch (test_num){
-            case 1:
-                sc.nextLine();
-                System.out.println("Введите первую строку");
-                String s1 = sc.nextLine();
-                System.out.println("Введите вторую строку");
-                String s2 = sc.nextLine();
-                System.out.println(hiddenAnagram(s1, s2));
-                break;
-            case 2:
-                sc.nextLine();
-                System.out.println("Введите первую строку");
-                String s = sc.nextLine();
-                System.out.println("Введите вторую строку");
-                int n = sc.nextInt();
-                System.out.println(collect(s, n));
-                break;
-            case 3:
-                sc.nextLine();
-                System.out.println("Введите первую строку");
-                String x = sc.nextLine();
-                System.out.println("Введите вторую строку");
-                String  y = sc.nextLine();
-                System.out.println(nicoCipher(x, y));
-                break;
-
-            case 4:
-                sc.nextLine();
-                Scanner inp = new Scanner(System.in); // Объявляем Scanner
-                System.out.println("Введите размер массива.");
-                int size = inp.nextInt(); // Читаем с клавиатуры размер массива и записываем в size
-                int[] x2 = new int[size]; // Создаём массив int размером в size
-                System.out.println("Введите значения массива.");
-                for (int i = 0; i < size; i++) {
-                    x2[i] = inp.nextInt(); // Заполняем массив элементами, введёнными с клавиатуры
-                }
-                System.out.println("Введите второе значение.");
-                int y2 = sc.nextInt();
-                System.out.println(Arrays.toString(twoProduct(x2, y2)));
-                break;
-
-            case 5:
-                sc.nextLine();
-                System.out.println("Введите значение.");
-                int x1 = sc.nextInt();
-                System.out.println(Arrays.toString(isExact(x1)));
-                break;
-        }
     }
 
     public static String hiddenAnagram(String s1, String s2){
